@@ -31,7 +31,7 @@ let win = [
    [2,4,6],
 
 ];
-let winlog =win.forEach(e=>{
+   win.forEach(e=>{
    if((boxTexts[e[0]].innerText === boxTexts[e[1]].innerText)&&(boxTexts[e[1]].innerText === boxTexts[e[2]].innerText)&&(boxTexts[e[0]].innerText !== "") ){
       document.querySelector('.info').innerText = boxTexts[e[0]].innerText + " Won"
       isGameOver = true;
